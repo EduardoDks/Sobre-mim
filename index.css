@@ -1,4 +1,4 @@
-body{
+/*body{
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -65,4 +65,183 @@ footer p {
 
 nav a:hover{
     color: goldenrod;
+}
+
+*/
+
+/* Configurações Gerais */
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+/* Header e Títulos */
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid goldenrod;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h1 { color: goldenrod; margin-bottom: 5px; }
+h2 { font-weight: 300; color: #ccc; font-size: 1.2em; }
+h3 { border-left: 4px solid goldenrod; padding-left: 10px; margin-top: 30px; }
+
+/* Página de Contatos (Cards) */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.contact-card:hover {
+    border-color: goldenrod;
+    transform: translateY(-5px);
+    background: #161616;
+}
+
+.contact-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 0.85em;
+    color: #bbb;
+}
+
+/* Botão de destaque */
+.btn-mail {
+    display: inline-block;
+    margin-top: 10px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.btn-mail:hover {
+    background: goldenrod;
+    color: black;
+}
+
+/* Layout da Aba de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    border-color: goldenrod;
+    box-shadow: 0 10px 20px rgba(218, 165, 32, 0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: goldenrod;
+    border: none;
+    padding: 0;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #222;
+    color: goldenrod;
+    font-size: 0.75em;
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid #444;
+}
+
+.view-project {
+    text-align: center;
+    background: transparent;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.view-project:hover {
+    background: goldenrod;
+    color: black;
 }
